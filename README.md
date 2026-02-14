@@ -2,7 +2,7 @@
 
 # :crossed_swords: Saga
 
-### Campaign Management for any Roleplaying Player
+### Campaign Management for Roleplaying Player
 
 ![Saga — Campaign Management](docs/screenshots/hero.png)
 
