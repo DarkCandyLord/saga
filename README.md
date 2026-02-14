@@ -1,98 +1,67 @@
-<img src="docs/screenshots/hero.png" width="100%" alt="Saga — Campaign Management for Dungeon Masters" />
+<img src="docs/screenshots/hero.png" width="100%" alt="Saga" />
 
 <div align="center">
 
 # Saga
 
-**Campaign Management for Dungeon Masters**
-
-![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma_6-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+**Campaign tracker for tabletop RPGs**
 
 </div>
 
-Saga replaces the scattered notebooks, spreadsheets, and browser tabs that DMs juggle during a campaign. One interface for characters, sessions, milestones, badges, and a full campaign timeline — with a floating dice roller and initiative tracker always one click away.
+---
+
+Every campaign I've run eventually turns into a mess of browser tabs, notebooks, and half-remembered NPC names. Saga is the one place where all of it lives — characters, sessions, timelines, dice rolls, initiative order — so I stop losing things between session three and session four.
+
+Works for D&D, Pathfinder, or whatever system you're running. It doesn't care about your edition.
 
 ---
 
-### Features
+## What You Get
 
-- **8-Tab Campaign Interface** — Overview, Roster, Badges, Timeline, Combat, NPCs, Add, and Export tabs give every campaign phase its own workspace
-- **Floating Dice Roller** — Persistent FAB accessible from any tab for quick checks without leaving your current view
-- **Initiative Tracker** — Add combatants, roll initiative, and step through turn order during live encounters
-- **NPC Directory** — Searchable, filterable NPC list linked to your campaign for mid-session reference
-- **Badge System** — Four rarity tiers (Common, Uncommon, Rare, Epic) for rewarding memorable player moments
-- **Onboarding Wizard** — 4-step guided setup walks new DMs through campaign creation in under a minute
-- **PWA-Ready** — Install directly to phone or tablet for a native-app feel at the gaming table
+- **One interface for everything** — Characters, sessions, milestones, badges, NPCs, and a full timeline instead of six different documents
+- **Dice roller that's always there** — Floating button accessible from any tab. Roll without leaving what you're doing
+- **Initiative tracker** — Add combatants, roll, step through turns. Built for running combat at the table, not prepping for it
+- **NPC directory** — Searchable, filterable. When a player says "who was the merchant in Thornwall?" you have the answer
+- **Badge system** — Four rarity tiers for rewarding memorable player moments. Surprisingly motivating
+- **Onboarding wizard** — New to this? Four steps, under a minute, you're running
+- **Install it on your phone** — PWA-ready. Runs like a native app at the gaming table
 
 ---
 
-### Screenshots
+## Screenshots
 
 <img src="docs/screenshots/feature-1.png" width="100%" alt="Campaign dashboard with character roster, session timeline, and quick stats" />
 
-*Campaign dashboard with character roster, session timeline, and quick stats*
+*Campaign dashboard — roster, timeline, and the stuff you actually need mid-session*
 
-<img src="docs/screenshots/feature-2.png" width="100%" alt="Landing page with feature highlights and dark fantasy aesthetic" />
+<img src="docs/screenshots/feature-2.png" width="100%" alt="Landing page with feature highlights" />
 
-*Landing page with feature highlights and dark fantasy aesthetic*
+*Landing page with feature breakdown*
 
-<img src="docs/screenshots/mobile.png" width="50%" alt="Saga mobile view" />
+<img src="docs/screenshots/mobile.png" width="50%" alt="Saga on mobile" />
 
-*Mobile-responsive layout for use at the gaming table*
-
----
-
-### Architecture
-
-- Decomposed component architecture with no file exceeding 250 lines — every tab dynamically imported for code-splitting
-- 19 RESTful API endpoints across campaigns, characters, badges, sessions, milestones, dice, encounters, and NPCs
-- Shared UI kit ensures visual consistency across all 8 tabs without style duplication
-- SQLite via Prisma ORM provides zero-config persistence with type-safe database access
+*Mobile layout — built for use at the table, not just on a desktop*
 
 ---
 
-### Tech Stack
+<details>
+<summary>Under the Hood</summary>
 
-![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma_6-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)
+<br>
 
----
+**Stack:** Next.js 15, TypeScript, React 19, Tailwind CSS, Prisma 6, SQLite, Framer Motion
 
-### Design Philosophy
+- Decomposed components — no file over 250 lines, every tab dynamically imported
+- 19 API routes across campaigns, characters, badges, sessions, milestones, dice, encounters, NPCs
+- SQLite via Prisma — no database server, no config, just works
+- PWA manifest for mobile installation
 
-> Saga was designed around the DM's workflow — prep before the session, run during play, review after. Every feature maps to a real moment at the table.
+</details>
 
 ---
 
-### D&D Toolkit Suite
+## Part of the Toolkit
 
-Saga is part of a 7-tool suite built for Dungeon Masters who want focused, offline-first tools instead of bloated platforms.
+Saga is one of seven tools I built for people who run imaginary worlds. See the full set on [my profile](https://github.com/DarkCandyLord).
 
-| Tool | Description |
-|------|-------------|
-| **Saga** | Campaign management — characters, timelines, badges, session logs |
-| **[Loreforge](https://github.com/DarkCandyLord/loreforge)** | Template-driven worldbuilding — structured prompts for rich settings |
-| **[Intrigue](https://github.com/DarkCandyLord/intrigue)** | NPC relationship mapper — interactive D3.js force-directed network graph |
-| **[Oath](https://github.com/DarkCandyLord/oath)** | Session zero generator — social contracts, safety tools, tone setting |
-| **[Outlands](https://github.com/DarkCandyLord/outlands)** | Hex crawl generator — SVG hex maps with terrain painting and encounters |
-| **[Favor](https://github.com/DarkCandyLord/favor)** | Faction reputation tracker — character-faction heatmap with tier system |
-| **[Voicecraft](https://github.com/DarkCandyLord/voicecraft)** | NPC voice profiles — dialect mixing, coaching prompts, sample dialogue |
-
----
-
-<div align="center">
-
-*Built for Dungeon Masters, by a Dungeon Master.*
-
-</div>
+*Your campaign is worth more than a Google Doc.*
