@@ -51,11 +51,11 @@ Works for D&D, Pathfinder, or whatever system you're running.
 
 <br>
 
-**Stack:** Next.js 15, TypeScript, React 19, Tailwind CSS, Prisma 6, SQLite, Framer Motion
+**Stack:** Next.js 15, TypeScript, React 19, Tailwind CSS, Prisma 6, PostgreSQL, Framer Motion
 
 - Decomposed components — no file over 250 lines, every tab dynamically imported
 - 19 API routes across campaigns, characters, badges, sessions, milestones, dice, encounters, NPCs
-- SQLite via Prisma — no database server, no config
+- PostgreSQL via Prisma with Neon serverless
 - PWA manifest for mobile installation
 
 </details>
